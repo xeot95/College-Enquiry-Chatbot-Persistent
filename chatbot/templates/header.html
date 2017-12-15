@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>
+			ChatBot | College Inquiry
+		</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" type="text/css">
+		<link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+		<script type="text/javascript" src="{% static 'script.js' %}"></script>
+	</head>
+
+	<body>
+		<div>
+			{% block content %}
+			{% endblock %}
+		</div>
+		<p class="footer" id='bottom_center'>Made with <img src="{% static 'heart.png' %}" alt="love"> by Raunak, Swapnil, Piyush, Apurva, Sanika</p>
+	</body>
+</html>
